@@ -1,7 +1,14 @@
-; -------------------------------------------------
-; simple echo program.
-; reads input from stdin and writes the same message to stdout
-; -------------------------------------------------
+; ----------------------------------------------------------
+; Name.........: echo 
+; Author.......: eco
+; Date.........: 05.02.2021
+; Arguments....: null
+; Parameters...: null
+; Modifiers....: all registers
+; Returns......: null
+; Description..: prints stdin back to stdout
+; ----------------------------------------------------------
+
 
 section .data
     sys_exit      equ     1
@@ -24,13 +31,12 @@ _start:
     nop
 
 top:
-    nop                     ; gdb nop
     call read_char          ; read one char and store it in buffer
     cmp byte [buffer], 10   ; exit if char is 10. 10 means EOL (ENTER)
     call print_buffer       ; print one char from buffer
-    je exit                 ; exit is char is 10.
+    je exit                 ; exit if char is 10.
     jmp top                 ; jump to top and start reading chars again.
-    nop                     ; gdb nop
+    nop
 
 ; stdin. standard scan interrupt.
 read_char:
