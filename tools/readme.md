@@ -29,3 +29,14 @@ It will automatically find .asm file and assemble it.
 ## restore.bash
 
 Restores basm and makelib files in /usr/bin.
+
+## toasm
+
+C to asm. converts c file to asm file
+
+```bash
+    ./toasm.bash file.c
+
+    # output: file.s
+```
+
