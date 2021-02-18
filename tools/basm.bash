@@ -1,24 +1,22 @@
 #! /bin/bash
 # basm [build assembly]
-# find .asm file
-# assemble it with nasm -m32
+# assembles the .asm file with nasm -m32
 # search given arguments in $lib_path and add them to linker
 
 # example: there is a sandbox.asm file and it needs printx.o file
 # if printx.o file is in std lib path ( in this case $lib_path ) than it generates the linker
 # end executes it
-#      ./basm.bash printx
+#      ./basm.bash sandbox.asm printx
 #
 # if no need for external libs than
-#      ./basm.bash 
+#      ./basm.bash sandbox.asm 
 
-file=$(ls | grep ".*\.\(asm\)")
-if [ "$file" == "" ]
-then
-	echo "there is no file with ext. '.asm'"
+if [ "$#" == 0 ]; then
+    echo "specify the .asm file"
 	exit 127
 fi
 
+file=$1
 name="${file%.*}"
 lib_path="/home/eco/assembly/lib"
 libs=""
@@ -26,7 +24,7 @@ libs=""
 args=("$@") 
 ELEMENTS=${#args[@]} 
 
-for (( i=0;i<$ELEMENTS;i++)); do
+for (( i=1;i<$ELEMENTS;i++)); do
 	libs+="$lib_path/${args[${i}]}.o"
 	if [ "$i" != "$(expr $ELEMENTS - 1)" ]
 	then

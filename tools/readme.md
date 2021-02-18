@@ -4,14 +4,10 @@ abbreviation for 'build asm'
 
 Use basm.bash to assemble a .asm file and linking it with specified libs.
 
-It will automatically find .asm file and assemble it.
-
-there is an executable in /usr/bin and there must be a alias for 'basm'
-
 lib_path is "/home/eco/assembly/lib"
 
 ```bash
-    ./basm.bash printx
+    ./basm.bash file.asm printx
 ```
 
 assemble .asm file and link it with printx.o. It assumes that 'printx.o' file is in 'lib_path')
@@ -20,10 +16,8 @@ assemble .asm file and link it with printx.o. It assumes that 'printx.o' file is
 
 Use makelib.bash to assemble a lib file.
 
-It will automatically find .asm file and assemble it.
-
 ```bash
-    ./makelib.bash
+    ./makelib.bash file.asm
 ```
 
 ## restore.bash

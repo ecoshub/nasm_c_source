@@ -3,12 +3,12 @@
 # and copies it to given pat ( lib_path)
 # not fancy script
 
-# example: simply run it in directory that has a .asm file
-#	./makelib.bash
+# example: simply run it and give it a .asm file
+#	./makelib.bash any.asm
 
-lib_path="../lib"
+lib_path="/home/eco/assembly/lib"
 suffix="_dbg"
-file=$(ls | grep ".*\.\(asm\)")
+file=$1
 name="${file%.*}"
 if [ "$file" == "" ]
 then
