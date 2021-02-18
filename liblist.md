@@ -2,6 +2,7 @@
 
 -   [ ] printx
 
+    -   [ ] print register
     -   [ ] formatted print
     -   [ ] string print
     -   [ ] float print
