@@ -68,9 +68,6 @@ print_number:
     ret
 
 close:
-    mov byte [number_pointer], 10 ; 10 is new line char. store it in to number_pointer
-    call print_number             ; print number stored in number_pointer
-
     ; std epilogue
     mov esp, ebp
     pop ebp
