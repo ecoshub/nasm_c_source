@@ -11,12 +11,13 @@
 
 
 section .data
-    message db "                      message to trim spaces                     ", 0
+    message     db "              hello world              ", 0
 section .bss
 
 section .text
-    extern trim
+    extern trim_space
     extern strlen
+    extern printreg
 
     global _start
 
@@ -29,9 +30,8 @@ _start:
     ; print string
     call print_string
 
-    ; trim the string
     push message
-    call trim
+    call trim_space
     lea esp, [esp + 4]
 
     ; print string
