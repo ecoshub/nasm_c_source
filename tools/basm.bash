@@ -18,11 +18,7 @@ fi
 
 file=$1
 name="${file%.*}"
-
-env_path=$(cat ../.env)
-tokens=(${env_path//=/ })
-lib_path="$HOME/${tokens[1]}"
-
+lib_path="$HOME/assembly/lib"
 libs=""
 
 args=("$@") 

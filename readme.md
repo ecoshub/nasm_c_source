@@ -1,6 +1,6 @@
 # Welcome
 
-This a Netwide Assembler work to recreate core c libraries with NASM
+This a Netwide Assembler work to recreate (and re-interpret) some of the core c libraries with NASM
 
 This work started as learning NASM. I hope it can help me to understand basics of assembly language and inspire others who wants to learn NASM or any other assembly language.
 
@@ -10,7 +10,7 @@ This work started as learning NASM. I hope it can help me to understand basics o
 
 Basically whole system is created around my working environment but it does not constitute an obstacle.
 
-First you need to modify the **lib_path** in **.env** file. it is default by **$HOME/assembly/lib** but you can change to anywhere just tools needs to know where it is.
+There is only one thing you need to modify the **lib_path** in **/tools/basm.bash** and **/tools/makelib.bash** file. it is default by **$HOME/assembly/lib** but you can change to anywhere just these tools needs to know where it is.
 
 There is a separate **readme.md** file in tools check it out.
 

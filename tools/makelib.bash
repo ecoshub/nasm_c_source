@@ -6,10 +6,7 @@
 # example: simply run it and give it a .asm file
 #	./makelib.bash any.asm
 
-env_path=$(cat ../.env)
-tokens=(${env_path//=/ })
-lib_path="$HOME/${tokens[1]}"
-
+lib_path="$HOME/assembly/lib"
 suffix="_dbg"
 file=$1
 name="${file%.*}"
