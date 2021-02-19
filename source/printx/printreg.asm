@@ -13,7 +13,7 @@
 section .data
     sep db " ------------------------- ", 10, 0     ; separator to
     sep_len equ $-sep                               ; calculate separator length
-    registers db "eaxebxecxedxebpesiedi"            ; string the contains all register names
+    registers db "eaxebxecxedxebpediesi"            ; string the contains all register names
     reg_sep db ": "                                 ; register separator string after every register
     reg_sep_len equ $-reg_sep                       ; calculate register separator length
 
