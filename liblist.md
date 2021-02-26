@@ -6,7 +6,7 @@
     -   [x] atoi
     -   [x] toupper
     -   [x] tolower
-    -   [ ] strcpy
+    -   [x] strcpy
     -   [ ] printf
 
 -   Extended
