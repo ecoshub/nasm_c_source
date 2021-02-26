@@ -24,7 +24,7 @@ Source is containing whole source code of this project. All object files in lib 
 
 Source has 3 sub folder
 
-**original:** original contains standard C Library files.
+**standard:** standard contains standard C Library files.
 
 **extended:** extended contains extended C Library files. all extended procedures has '\_x' suffix in them and they are all has som extended features.
 
