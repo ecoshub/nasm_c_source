@@ -20,6 +20,10 @@ Use makelib.bash to assemble a lib file.
     ./makelib.bash file.asm
 ```
 
+creates two '.o' files. one with debugging info and one without.
+
+debugger included object files has '\_dbg' suffix.
+
 ## restore.bash
 
 Restores basm and makelib files in /usr/bin.
@@ -30,6 +34,16 @@ C to asm. converts c file to asm file
 
 ```bash
     ./toasm.bash file.c
+
+    # output: file.s
+```
+
+# source_all.bash
+
+get all source files that has '.asm' extension recursively and perform 'makelib.bash' to each one of them.
+
+```bash
+    ./source_all.bash
 
     # output: file.s
 ```
