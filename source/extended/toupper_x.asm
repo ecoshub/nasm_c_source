@@ -1,19 +1,19 @@
 ; ----------------------------------------------------------
-; Name.........: to_upper
+; Name.........: toupper_x
 ; Author.......: eco
 ; Date.........: 11.02.2021
 ; Arguments....: null
 ; Parameters...: one string pointer passed from stack
 ; Modifiers....: eax, ebx
 ; Returns......: null
-; Description..: converts all lowercase chars to uppercase in given string pointer
+; Description..: extended edition of toupper. converts all lowercase chars to uppercase in given string pointer
 ; ----------------------------------------------------------
 
 
 section .text
-    global to_upper:
+    global toupper_x:
 
-to_upper:
+toupper_x:
     nop
     push ebp
     mov ebp, esp
@@ -26,13 +26,13 @@ to_upper:
     inc eax                     ; point next byte
     mov bl, byte [eax]          ; move char from memory to register 
     cmp ebx, 0                  ; compare against zero (null terminator)
-    jz to_upper.done            ; jump to done if end of string
+    jz toupper_x.done           ; jump to done if end of string
     cmp ebx, 'a'                ; if below 'a' than its not a lowercase char
-    jb to_upper.loop            ; skip the char
+    jb toupper_x.loop           ; skip the char
     cmp ebx, 'z'                ; if above 'z' than its not a lowercase char
-    ja to_upper.loop            ; skip the char
+    ja toupper_x.loop           ; skip the char
     sub byte [eax], 20h         ; subtracting 20h makes lowercase char uppercase 
-    jmp to_upper.loop           ; continue
+    jmp toupper_x.loop          ; continue
 
 .done:
     ; std epilogue

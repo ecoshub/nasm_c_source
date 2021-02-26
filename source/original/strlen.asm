@@ -23,7 +23,7 @@ strlen:
     xor eax, eax                    ; reset eax
 
 .loop:
-    cmp byte [ecx + eax], 0          ; dereference exa to get value of string that position in 
+    cmp byte [ecx + eax], 0         ; dereference exa to get value of string that position in 
     jz .done                        ; done if content is zero
     inc eax                         ; inc cursor one byte
     jmp .loop                       ; repeat

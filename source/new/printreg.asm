@@ -64,7 +64,7 @@ printreg:
 
     mov byte [cursor], 0            ; reset the register name cursor
 
-    jmp printreg.compare                     ; start with comparison
+    jmp printreg.compare            ; start with comparison
 
 
 .loop:

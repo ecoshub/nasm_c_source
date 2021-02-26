@@ -15,10 +15,9 @@
     -   [x] strlen
     -   [x] to_upper
     -   [x] to_lower
-    -   [ ] trim
-    -   [ ] copy
+    -   [x] trim
+    -   [ ] strcpy
     -   [ ] concat
 
 -   others
-    -   [ ] atoi
-    -   [ ] itoa
+    -   [x] atoi

@@ -1,12 +1,13 @@
 ; ----------------------------------------------------------
-; Name.........: printx (print extended)
+; < Working Progress>
+; Name.........: printf_x
 ; Author.......: eco
 ; Date.........: 11.02.2021
 ; Arguments....: null
 ; Parameters...: one dword to print
 ; Modifiers....: all registers
 ; Returns......: null
-; Description..: prints the base 10 value of given dword
+; Description..: extended version of printf. prints the base 10 value of given dword
 ; ----------------------------------------------------------
 
 
@@ -20,9 +21,9 @@ section .bss
     number_pointer resb 1
 
 section .text
-    global printx
+    global printf_x
 
-printx:
+printf_x:
     nop
     push ebp
     mov ebp, esp
@@ -40,7 +41,7 @@ printx:
     div ebx                       ; divide exa to ebx
     push edx                      ; push reminder to stack
     cmp eax, 0                    ; compare reminder to zero
-    jnz printx.bcd_loop            ; jump to divide routine if reminder is not zero
+    jnz printf_x.bcd_loop         ; jump to divide routine if reminder is not zero
 
 .print_loop:
     pop eax                       ; pop reminder from stack
@@ -49,7 +50,7 @@ printx:
     mov byte [number_pointer], al ; al holds the bcd of number store it in to number_pointer to print.
     call to_hex                   ; convert value in the number_pointer to string value
     call print_number             ; print the number
-    jmp printx.print_loop          ; restart the print routine
+    jmp printf_x.print_loop       ; restart the print routine
 
 to_hex:
     xor eax, eax                  ; clear eax

@@ -24,8 +24,8 @@ atoi:
     mov ebp, esp
     ; std prologue
 
-    mov edi, [ebp + 8]              ; reading string from stack store it in edi
-                                    ; no on edi is string pointer
+    mov edi, [ebp + 8]                  ; reading string from stack store it in edi
+                                        ; no on edi is string pointer
 
     ; get string length
     push edi
@@ -52,17 +52,17 @@ atoi:
     xor ebx, ebx                        ; ebx will be the result value
     
     ; sing control
-    cmp byte [edi], '-'              ; compare with '-' char
+    cmp byte [edi], '-'                 ; compare with '-' char
     je set_negative                     ; if its starting with '-' set multiplier value to -1
-    cmp byte [edi], '+'              ; compare with '+' char
+    cmp byte [edi], '+'                 ; compare with '+' char
     je skip_first                       ; if its starting with '+' increment the esi
 
-    jmp atoi.condition                ; start with condition check
+    jmp atoi.condition                  ; start with condition check
 
 
 .loop:
     xor eax, eax                        ; clear eax
-    mov al, byte [edi+esi]           ; store char in to al
+    mov al, byte [edi+esi]              ; store char in to al
     call number_check                   ; check if its a number or not
     sub al, 30h                         ; convert it from ascii to integer
 
@@ -78,7 +78,7 @@ atoi:
 
 .condition:
     cmp esi, dword [length]             ; compare char index to length
-    jne atoi.loop                     ; if its not equal repeat
+    jne atoi.loop                       ; if its not equal repeat
     jmp end                             ; end
 
 number_check:
@@ -108,7 +108,7 @@ pow_condition:
     ret
 
 single_char:
-    mov al, byte[edi]                ; read first char in to a
+    mov al, byte[edi]                   ; read first char in to a
     call number_check                   ; check if it is a number
     sub al, 30h                         ; convert it from ascii to integer
     mov ebx, eax                        ; move to ebx (ebx will be the result)
