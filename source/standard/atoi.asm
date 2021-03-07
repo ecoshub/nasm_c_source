@@ -24,8 +24,8 @@ atoi:
     mov ebp, esp
     ; std prologue
 
-    mov edi, [ebp + 8]                  ; reading string from stack store it in edi
-                                        ; no on edi is string pointer
+    mov edi, [ebp + 8]                  ; get string pointer from stack and store it in edi
+                                        ; now on edi is string pointer
 
     ; get string length
     push edi
