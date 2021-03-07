@@ -21,7 +21,7 @@ section .bss
     cursor resb 1                                   ; cursor that olds the register name string index
 
 section .text
-    extern printf_x   
+    extern print_int   
     global printreg
 
 printreg:
@@ -83,7 +83,7 @@ printreg:
     mov edx, reg_sep_len
     int 80h
 
-    call printf_x                   ; print register in stack
+    call print_int                  ; print register in stack
     lea esp , [esp + 8]             ; pop parameters
 
     push 10                         ; push newline char to stack
