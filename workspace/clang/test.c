@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-int main() {
-    char* name = "emre can ocak";
-    printf("%s\n", name);
+int strlen(char *);
+
+void main() {
+    char *string = "hello world";
+    int string_length = strlen(string);
+    printf("string_length: %i\n", string_length);
 }
