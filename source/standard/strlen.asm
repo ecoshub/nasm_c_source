@@ -14,21 +14,20 @@ section .text
     global strlen
 
 strlen:
-    nop
     push ebp
     mov ebp, esp
     ; std prologue
 
-    mov ecx, [ebp + 8]              ; value to find string length. reading argument from stack..
-    xor eax, eax                    ; reset eax
+    mov ecx, [ebp + 8]              ; reading string pointer from stack.
+    xor eax, eax                    ; reset eax to zero. now on it is gonna keep the char count.
+    jmp compare                     ; jump to comparison line
 
-.loop:
-    cmp byte [ecx + eax], 0         ; dereference exa to get value of string that position in 
-    jz .done                        ; done if content is zero
-    inc eax                         ; inc cursor one byte
-    jmp .loop                       ; repeat
+loop:
+    inc eax                         ; inc counter by one
+compare:
+    cmp byte [ecx + eax], 0         ; dereference string pointer + exa to get value of char. 
+    jne loop                        ; jump to loop if its not a null terminator (0)
 
-.done:
     ; std epilogue
     mov esp, ebp
     pop ebp
