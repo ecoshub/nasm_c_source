@@ -1,13 +1,13 @@
 #! /bin/bash
 # basm [build assembly]
-# assembles the .asm file with nasm -m32
+# assemble the .asm file with nasm -m32
 # search given arguments in $lib_path and add them to linker
 
-# example: there is a sandbox.asm file and it needs printx.o file
-# if printx.o file is in std lib path ( in this case $lib_path ) than it generates the linker
-# end executes it
-#      ./basm.bash sandbox.asm printx
-#
+# example: there is a sandbox.asm file and it needs printf.o file
+# if printf.o file is in std lib path ( in this case $lib_path ) than it generates the linker path
+# and executes it
+#      ./basm.bash sandbox.asm printf
+
 # if no need for external libs than
 #      ./basm.bash sandbox.asm 
 

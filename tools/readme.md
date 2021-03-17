@@ -4,13 +4,13 @@ abbreviation for 'build asm'
 
 Use basm.bash to assemble a .asm file and linking it with specified libs.
 
-lib_path is "/home/eco/assembly/lib"
+**lib_path** is "/home/eco/assembly/lib"
 
 ```bash
-    ./basm.bash file.asm printx
+    ./basm.bash file.asm printf
 ```
 
-assemble .asm file and link it with printx.o. It assumes that 'printx.o' file is in 'lib_path')
+this assembles **file.asm** file and links it with **printf.o**. It assumes that **printf.o** is in **lib_path**
 
 ## makelib
 
@@ -20,17 +20,19 @@ Use makelib.bash to assemble a lib file.
     ./makelib.bash file.asm
 ```
 
-creates two '.o' files. one with debugging info and one without.
+creates two **.o** files. one with debugging info and one without.
 
-debugger included object files has '\_dbg' suffix.
+debugger included file has **_dbg** suffix.
 
 ## restore.bash
 
-Restores basm and makelib files in /usr/bin.
+Restores basm and makelib files in **/usr/bin** if exists.
 
 ## toasm
 
-C to asm. converts c file to asm file
+C to asm
+
+converts a c file to asm file
 
 ```bash
     ./toasm.bash file.c
@@ -40,7 +42,7 @@ C to asm. converts c file to asm file
 
 # source_all.bash
 
-get all source files that has '.asm' extension recursively and perform 'makelib.bash' to each one of them.
+get all source files that has '.asm' extension recursively and perform 'makelib.bash' to each one of them to create object files.
 
 ```bash
     ./source_all.bash

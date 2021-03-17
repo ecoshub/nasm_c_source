@@ -1,7 +1,6 @@
 # makelib
-# makes .o file from .asm file
-# and copies it to given pat ( lib_path)
-# not fancy script
+# creates object file with and without a debugger
+# and copies it in to given path (lib_path)
 
 # example: simply run it and give it a .asm file
 #	./makelib.bash any.asm
