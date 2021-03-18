@@ -1,6 +1,6 @@
 # Welcome
 
-This is a Netwide Assembler work to recreate (*and reinterpret*) some of the **Standard C Libraries**.
+This is a Netwide Assembler work to recreate (_and reinterpret_) some of the **Standard C Libraries**.
 
 This work started for learning assembly language with NASM. I hope it can help me to understand basics of assembly language and inspire others who wants to learn NASM or any other assembly language.
 
@@ -42,7 +42,7 @@ some of my notes about NASM syntax and definitions
 
 There are some other simple programs like argument reading and echo. it is mostly containing early stages of my learning.
 
-##  Usage
+## Usage
 
 To use a .asm file in your c code.
 
@@ -58,10 +58,11 @@ To use a .asm file in your c code.
 ```
 
 Example:
-    I have a strlen.asm file
-    and I am gonna use it in my source.c file
+I have a strlen.asm file
+and I am gonna use it in my source.c file
 
 strlen.asm:
+
 ```asm
     section .text
         global strlen
@@ -71,15 +72,15 @@ strlen.asm:
         mov ebp, esp
         ; std prologue
 
-        mov ecx, [ebp + 8]              ; reading string pointer from stack.
-        xor eax, eax                    ; reset eax to zero. now on it is gonna keep the char count.
-        jmp compare                     ; jump to comparison line
+        mov ecx, [ebp + 8]        ; reading string pointer from stack.
+        xor eax, eax              ; reset eax to zero. now on it is gonna keep the char count.
+        jmp compare               ; jump to comparison line
 
     loop:
-        inc eax                         ; inc counter by one
+        inc eax                   ; inc counter by one
     compare:
-        cmp byte [ecx + eax], 0         ; dereference string pointer + exa to get value of char. 
-        jne loop                        ; jump to loop if its not a null terminator (0)
+        cmp byte [ecx + eax], 0   ; dereference string pointer + exa to get value of char.
+        jne loop                  ; jump to loop if its not a null terminator (0)
 
         ; std epilogue
         mov esp, ebp
