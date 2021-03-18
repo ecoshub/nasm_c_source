@@ -1,0 +1,786 @@
+[
+	{
+		"name": "isblank",
+		"header": "ctype.h",
+		"definition": "int isblank(int c);",
+		"description": "Tests if c is a blank or tab character.",
+		"done": false
+	},
+	{
+		"name": "isdigit",
+		"header": "ctype.h",
+		"definition": "int isdigit(int c);",
+		"description": "Tests if c is a decimal digit.",
+		"done": false
+	},
+	{
+		"name": "tolower",
+		"header": "ctype.h",
+		"definition": "int tolower(int c);",
+		"description": "Converts c to lowercase.",
+		"done": true
+	},
+	{
+		"name": "toascii",
+		"header": "ctype.h",
+		"definition": "int toascii(int c);",
+		"description": "Converts c to a character in the 7-bit US-ASCII character set.",
+		"done": false
+	},
+	{
+		"name": "ispunct",
+		"header": "ctype.h",
+		"definition": "int ispunct(int c);",
+		"description": "Tests if c is a punctuation character.",
+		"done": false
+	},
+	{
+		"name": "islower",
+		"header": "ctype.h",
+		"definition": "int islower(int c);",
+		"description": "Tests if c is a lowercase letter.",
+		"done": false
+	},
+	{
+		"name": "isprint",
+		"header": "ctype.h",
+		"definition": "int isprint(int c);",
+		"description": "Tests if c is a printable character including the space.",
+		"done": false
+	},
+	{
+		"name": "isalpha",
+		"header": "ctype.h",
+		"definition": "int isalpha(int c);",
+		"description": "Tests if c is alphabetic.",
+		"done": false
+	},
+	{
+		"name": "isascii4",
+		"header": "ctype.h",
+		"definition": "int isascii(int c);",
+		"description": "Tests if c is within the 7-bit US-ASCII range.",
+		"done": false
+	},
+	{
+		"name": "isupper",
+		"header": "ctype.h",
+		"definition": "int isupper(int c);",
+		"description": "Tests if c is an uppercase letter.",
+		"done": false
+	},
+	{
+		"name": "iscntrl",
+		"header": "ctype.h",
+		"definition": "int iscntrl(int c);",
+		"description": "Tests if c is a control character.",
+		"done": false
+	},
+	{
+		"name": "assert",
+		"header": "assert.h",
+		"definition": "void assert(int expression);",
+		"description": "Prints a diagnostic message and ends the program if the expression is false.",
+		"done": false
+	},
+	{
+		"name": "isgraph",
+		"header": "ctype.h",
+		"definition": "int isgraph(int c);",
+		"description": "Tests if c is a printable character excluding the space.",
+		"done": false
+	},
+	{
+		"name": "isspace",
+		"header": "ctype.h",
+		"definition": "int isspace(int c);",
+		"description": "Tests if c is a whitespace character.",
+		"done": false
+	},
+	{
+		"name": "isalnum",
+		"header": "ctype.h",
+		"definition": "int isalnum(int c);",
+		"description": "Tests if c is alphanumeric.",
+		"done": false
+	},
+	{
+		"name": "puts",
+		"header": "stdio.h",
+		"definition": "int puts(const char *string);",
+		"description": "Prints a string to stdout.",
+		"done": false
+	},
+	{
+		"name": "toupper",
+		"header": "ctype.h",
+		"definition": "int toupper(int c);",
+		"description": "Converts c to uppercase.",
+		"done": true
+	},
+	{
+		"name": "memcmp",
+		"header": "string.h",
+		"definition": "int memcmp(const void *buf1, const void *buf2, size_t count);",
+		"description": "Compares up to count bytes of buf1 and buf2.",
+		"done": false
+	},
+	{
+		"name": "atoi",
+		"header": "stdlib.h",
+		"definition": "int atoi(const char *string);",
+		"description": "Converts string to an integer.",
+		"done": true
+	},
+	{
+		"name": "cosh",
+		"header": "math.h",
+		"definition": "double cosh(double x);",
+		"description": "Calculates the hyperbolic cosine of x.",
+		"done": false
+	},
+	{
+		"name": "cos",
+		"header": "math.h",
+		"definition": "double cos(double x);",
+		"description": "Calculates the cosine of x.",
+		"done": false
+	},
+	{
+		"name": "acos",
+		"header": "math.h",
+		"definition": "double acos(double x);",
+		"description": "Calculates the arc cosine of x.",
+		"done": false
+	},
+	{
+		"name": "fsetpos",
+		"header": "stdio.h",
+		"definition": "int fsetpos(FILE *stream, const fpos_t *pos);",
+		"description": "Moves the current file position to a new location determined by pos.",
+		"done": false
+	},
+	{
+		"name": "fseek",
+		"header": "stdio.h",
+		"definition": "int fseek(FILE *stream, long int offset, int origin);",
+		"description": "Changes the current file position associated with stream to a new location.",
+		"done": false
+	},
+	{
+		"name": "div",
+		"header": "stdlib.h",
+		"definition": "div_t div(int numerator, int denominator);",
+		"description": "Calculates the quotient and remainder of the division of numerator by denominator.",
+		"done": false
+	},
+	{
+		"name": "exit",
+		"header": "stdlib.h",
+		"definition": "void exit(int status);",
+		"description": "Ends a program normally.",
+		"done": false
+	},
+	{
+		"name": "free",
+		"header": "stdlib.h",
+		"definition": "void free(void *ptr);",
+		"description": "Frees a block of storage.",
+		"done": false
+	},
+	{
+		"name": "exp",
+		"header": "math.h",
+		"definition": "double exp(double x);",
+		"description": "Calculates the exponential function of a floating-point argument x.",
+		"done": false
+	},
+	{
+		"name": "fflush",
+		"header": "stdio.h",
+		"definition": "int fflush(FILE *stream);",
+		"description": "Writes the contents of the buffer associated with the output stream.",
+		"done": false
+	},
+	{
+		"name": "fgets",
+		"header": "stdio.h",
+		"definition": "char *fgets(char *string, int n, FILE *stream);",
+		"description": "Reads a string from the input stream.",
+		"done": false
+	},
+	{
+		"name": "abort",
+		"header": "stdlib.h",
+		"definition": "void abort(void);",
+		"description": "Stops a program abnormally.",
+		"done": false
+	},
+	{
+		"name": "fabs",
+		"header": "math.h",
+		"definition": "double fabs(double x);",
+		"description": "Calculates the absolute value of a floating-point argument x.",
+		"done": false
+	},
+	{
+		"name": "fgetc",
+		"header": "stdio.h",
+		"definition": "int fgetc(FILE *stream);",
+		"description": "",
+		"done": false
+	},
+	{
+		"name": "tmpnam",
+		"header": "stdio.h",
+		"definition": "char *tmpnam(char *string);",
+		"description": "Generates a temporary file name.",
+		"done": false
+	},
+	{
+		"name": "feof",
+		"header": "stdio.h",
+		"definition": "int feof(FILE *stream);",
+		"description": "Tests whether the end-of-file flag is set for a given stream.",
+		"done": false
+	},
+	{
+		"name": "fmod",
+		"header": "math.h",
+		"definition": "double fmod(double x, double y);",
+		"description": "Calculates the floating-point remainder of x/y.",
+		"done": false
+	},
+	{
+		"name": "fclose",
+		"header": "stdio.h",
+		"definition": "int fclose(FILE *stream);",
+		"description": "Closes the specified stream.",
+		"done": false
+	},
+	{
+		"name": "fputc",
+		"header": "stdio.h",
+		"definition": "int fputc(int c, FILE *stream);",
+		"description": "Prints a character to the output stream.",
+		"done": false
+	},
+	{
+		"name": "floor",
+		"header": "math.h",
+		"definition": "double floor(double x);",
+		"description": "Calculates the floating-point value representing the largest integer less than or equal to x.",
+		"done": false
+	},
+	{
+		"name": "fscanf",
+		"header": "stdio.h",
+		"definition": "int fscanf(FILE *stream, const char *format-string, arg-list);",
+		"description": "Reads data from stream into locations given by arg-list.",
+		"done": false
+	},
+	{
+		"name": "fprintf",
+		"header": "stdio.h",
+		"definition": "int fprintf(FILE *stream, const char *format-string, arg-list);",
+		"description": "Formats and prints characters and values to the output stream.",
+		"done": false
+	},
+	{
+		"name": "fopen",
+		"header": "stdio.h",
+		"definition": "FILE *fopen(const char *filename, const char *mode);",
+		"description": "Opens the specified file.",
+		"done": false
+	},
+	{
+		"name": "fputs",
+		"header": "stdio.h",
+		"definition": "int fputs(const char *string, FILE *stream);",
+		"description": "Copies a string to the output stream.",
+		"done": false
+	},
+	{
+		"name": "freopen",
+		"header": "stdio.h",
+		"definition": "FILE *freopen(const char *filename, const char *mode, FILE *stream);",
+		"description": "Closes stream, and reassigns it to the file specified.",
+		"done": false
+	},
+	{
+		"name": "fgetpos",
+		"header": "stdio.h",
+		"definition": "int fgetpos(FILE *stream, fpos_t *pos);",
+		"description": "Stores the current position of the file pointer associated with stream into the object pointed to by pos.",
+		"done": false
+	},
+	{
+		"name": "fread",
+		"header": "stdio.h",
+		"definition": "size_t fread(void *buffer, size_t size, size_t count, FILE *stream);",
+		"description": "Reads up to count items of size length from the input stream, and stores them in buffer.",
+		"done": false
+	},
+	{
+		"name": "getc",
+		"header": "stdio.h",
+		"definition": "int getc(FILE *stream);",
+		"description": "Reads a single character from the input stream.",
+		"done": false
+	},
+	{
+		"name": "ftell",
+		"header": "stdio.h",
+		"definition": "long int ftell(FILE *stream);",
+		"description": "Gets the current position of the file pointer.",
+		"done": false
+	},
+	{
+		"name": "gets",
+		"header": "stdio.h",
+		"definition": "char *gets(char *buffer);",
+		"description": "Reads a string from stdin, and stores it in buffer.",
+		"done": false
+	},
+	{
+		"name": "getenv",
+		"header": "stdlib.h",
+		"definition": "char *getenv(const char *varname);",
+		"description": "Searches environment variables for varname.",
+		"done": false
+	},
+	{
+		"name": "getchar",
+		"header": "stdio.h",
+		"definition": "int getchar(void);",
+		"description": "Reads a single character from stdin.",
+		"done": false
+	},
+	{
+		"name": "calloc",
+		"header": "stdlib.h",
+		"definition": "void *calloc(size_t num, size_t size);",
+		"description": "Reserves storage space for an array of num elements, each of size size, and initializes the values of all elements to 0.",
+		"done": false
+	},
+	{
+		"name": "qsort",
+		"header": "stdlib.h",
+		"definition": "void qsort(void *base, size_t num, size_t width, int(*compare)(const void *element1, const void *element2));",
+		"description": "Performs a quick sort of an array of num elements, each of width bytes in size.",
+		"done": false
+	},
+	{
+		"name": "raise",
+		"header": "signal.h",
+		"definition": "int raise(int sig);",
+		"description": "Sends the signal sig to the running program.",
+		"done": false
+	},
+	{
+		"name": "atol",
+		"header": "stdlib.h",
+		"definition": "long int atol(const char *string);",
+		"description": "Converts string to a long integer.",
+		"done": false
+	},
+	{
+		"name": "ceil",
+		"header": "math.h",
+		"definition": "double ceil(double x);",
+		"description": "Calculates the double value representing the smallest integer that is greater than or equal to x.",
+		"done": false
+	},
+	{
+		"name": "atof",
+		"header": "stdlib.h",
+		"definition": "double atof(const char *string);",
+		"description": "Converts string to a double-precision floating-point value.",
+		"done": false
+	},
+	{
+		"name": "atan",
+		"header": "math.h",
+		"definition": "double atan(double x);",
+		"description": "Calculates the arc tangent of x.",
+		"done": false
+	},
+	{
+		"name": "atan2",
+		"header": "math.h",
+		"definition": "double atan2(double y, double x);",
+		"description": "Calculates the arc tangent of y/x.",
+		"done": false
+	},
+	{
+		"name": "atexit",
+		"header": "stdlib.h",
+		"definition": "int atexit(void (*func)(void));",
+		"description": "Registers a function to be called at normal termination.",
+		"done": false
+	},
+	{
+		"name": "abs",
+		"header": "stdlib.h",
+		"definition": "int abs(int n);",
+		"description": "Calculates the absolute value of an integer argument n.",
+		"done": false
+	},
+	{
+		"name": "asin",
+		"header": "math.h",
+		"definition": "double asin(double x);",
+		"description": "Calculates the arc sine of x.",
+		"done": false
+	},
+	{
+		"name": "log",
+		"header": "math.h",
+		"definition": "double log(double x);",
+		"description": "Calculates the natural logarithm of x.",
+		"done": false
+	},
+	{
+		"name": "fwrite",
+		"header": "stdio.h",
+		"definition": "size_t fwrite(const void *buffer, size_t size,size_t count, FILE *stream);",
+		"description": "Writes up to count items of size length from buffer to stream.",
+		"done": false
+	},
+	{
+		"name": "tmpfile",
+		"header": "stdio.h",
+		"definition": "FILE *tmpfile(void);",
+		"description": "Creates a temporary binary file and opens it.",
+		"done": false
+	},
+	{
+		"name": "malloc",
+		"header": "stdlib.h",
+		"definition": "void *malloc(size_t size);",
+		"description": "Reserves a block of storage.",
+		"done": false
+	},
+	{
+		"name": "tan",
+		"header": "math.h",
+		"definition": "double tan(double x);",
+		"description": "Calculates the tangent of x.",
+		"done": false
+	},
+	{
+		"name": "tanh",
+		"header": "math.h",
+		"definition": "double tanh(double x);",
+		"description": "Calculates the hyperbolic tangent of x.",
+		"done": false
+	},
+	{
+		"name": "log10",
+		"header": "math.h",
+		"definition": "double log10(double x);",
+		"description": "Calculates the base 10 logarithm of x.",
+		"done": false
+	},
+	{
+		"name": "putc",
+		"header": "stdio.h",
+		"definition": "int putc(int c, FILE *stream);",
+		"description": "Prints c to the output stream.",
+		"done": false
+	},
+	{
+		"name": "putenv",
+		"header": "stdlib.h",
+		"definition": "int *putenv(const char *varname);",
+		"description": "Sets the value of an environment variable by altering an existing variable or creating a new one.",
+		"done": false
+	},
+	{
+		"name": "pow",
+		"header": "math.h",
+		"definition": "double pow(double x, double y);",
+		"description": "Calculates the value x to the power y.",
+		"done": false
+	},
+	{
+		"name": "srand",
+		"header": "stdlib.h",
+		"definition": "void srand(unsigned int seed);",
+		"description": "Sets the seed for the pseudo-random number generator.",
+		"done": false
+	},
+	{
+		"name": "sqrt",
+		"header": "math.h",
+		"definition": "double sqrt(double x);",
+		"description": "Calculates the square root of x.",
+		"done": false
+	},
+	{
+		"name": "perror",
+		"header": "stdio.h",
+		"definition": "void perror(const char *string);",
+		"description": "Prints an error message to stderr.",
+		"done": false
+	},
+	{
+		"name": "sscanf",
+		"header": "stdio.h",
+		"definition": "int sscanf(const char *buffer, const char *format, arg-list);",
+		"description": "Reads data from buffer into the locations given by arg-list.",
+		"done": false
+	},
+	{
+		"name": "sin",
+		"header": "math.h",
+		"definition": "double sin(double x);",
+		"description": "Calculates the sine of x.",
+		"done": false
+	},
+	{
+		"name": "printf",
+		"header": "stdio.h",
+		"definition": "int printf(const char *format-string, arg-list);",
+		"description": "Formats and prints characters and values to stdout.",
+		"done": true
+	},
+	{
+		"name": "putchar",
+		"header": "stdio.h",
+		"definition": "int putchar(int c);",
+		"description": "Prints c to stdout.",
+		"done": false
+	},
+	{
+		"name": "realloc",
+		"header": "stdlib.h",
+		"definition": "void *realloc(void *ptr, size_t size);",
+		"description": "Changes the size of a previously reserved storage block.",
+		"done": false
+	},
+	{
+		"name": "sprintf",
+		"header": "stdio.h",
+		"definition": "int sprintf(char *buffer, const char *format-string, arg-list);",
+		"description": "Formats and stores characters and values in buffer.",
+		"done": false
+	},
+	{
+		"name": "scanf",
+		"header": "stdio.h",
+		"definition": "int scanf(const char *format-string, arg-list);",
+		"description": "Reads data from stdin into locations given by arg-list.",
+		"done": false
+	},
+	{
+		"name": "rewind",
+		"header": "stdio.h",
+		"definition": "void rewind(FILE *stream);",
+		"description": "Repositions the file pointer associated with stream to the beginning of the file.",
+		"done": false
+	},
+	{
+		"name": "setlocale",
+		"header": "locale.h",
+		"definition": "char *setlocale(int category, const char *locale);",
+		"description": "Changes or queries variables defined in the locale.",
+		"done": false
+	},
+	{
+		"name": "setbuf",
+		"header": "stdio.h",
+		"definition": "void setbuf(FILE *stream, char *buffer);",
+		"description": "Controls buffering for stream.",
+		"done": false
+	},
+	{
+		"name": "signal",
+		"header": "signal.h",
+		"definition": "void(*signal (int sig, void(*func)(int))) (int);",
+		"description": "Registers func as a signal handler for the signal sig.",
+		"done": false
+	},
+	{
+		"name": "remove",
+		"header": "stdio.h",
+		"definition": "int remove(const char *filename);",
+		"description": "Deletes the file specified by filename.",
+		"done": false
+	},
+	{
+		"name": "sinh",
+		"header": "math.h",
+		"definition": "double sinh(double x);",
+		"description": "Calculates the hyperbolic sine of x.",
+		"done": false
+	},
+	{
+		"name": "rename",
+		"header": "stdio.h",
+		"definition": "int rename(const char *oldname, const char *newname);",
+		"description": "Renames the specified file.",
+		"done": false
+	},
+	{
+		"name": "rand",
+		"header": "stdlib.h",
+		"definition": "int rand(void);",
+		"description": "Returns a pseudo-random integer.",
+		"done": false
+	},
+	{
+		"name": "strcat",
+		"header": "string.h",
+		"definition": "char *strcat(char *string1, const char *string2);",
+		"description": "Concatenates string2 to string1.",
+		"done": false
+	},
+	{
+		"name": "strspn",
+		"header": "string.h",
+		"definition": "size_t strspn(const char *string1, const char *string2);",
+		"description": "Returns the length of the initial substring of string1 consisting of characters contained in string2.",
+		"done": false
+	},
+	{
+		"name": "strstr",
+		"header": "string.h",
+		"definition": "char *strstr(const char *string1, const char *string2);",
+		"description": "Returns a pointer to the first occurrence of string2 in string1.",
+		"done": false
+	},
+	{
+		"name": "memmove",
+		"header": "string.h",
+		"definition": "void *memmove(void *dest, const void *src, size_t count);",
+		"description": "Copies count bytes of src to dest. Allows copying between objects that overlap.",
+		"done": false
+	},
+	{
+		"name": "memchr",
+		"header": "string.h",
+		"definition": "void *memchr(const void *buf, int c, size_t count);",
+		"description": "Searches the first count bytes of buf for the first occurrence of c converted to an unsigned character.",
+		"done": false
+	},
+	{
+		"name": "strcpy",
+		"header": "string.h",
+		"definition": "char *strcpy(char *string1, const char *string2);",
+		"description": "Copies string2 into string1.",
+		"done": true
+	},
+	{
+		"name": "memcpy",
+		"header": "string.h",
+		"definition": "void *memcpy(void *dest, const void *src, size_t count);",
+		"description": "Copies count bytes of src to dest.",
+		"done": false
+	},
+	{
+		"name": "strlen",
+		"header": "string.h",
+		"definition": "size_t strlen(const char *string);",
+		"description": "Calculates the length of string.",
+		"done": true
+	},
+	{
+		"name": "strchr",
+		"header": "string.h",
+		"definition": "char *strchr(const char *string, int c);",
+		"description": "Locates the first occurrence of c in string.",
+		"done": false
+	},
+	{
+		"name": "strcspn",
+		"header": "string.h",
+		"definition": "size_t strcspn(const char *string1, const char *string2);",
+		"description": "Returns the length of the initial substring of string1 consisting of characters not contained in string2.",
+		"done": false
+	},
+	{
+		"name": "strcmp",
+		"header": "string.h",
+		"definition": "int strcmp(const char *string1, const char *string2);",
+		"description": "Compares the value of string1 to string2.",
+		"done": false
+	},
+	{
+		"name": "memset",
+		"header": "string.h",
+		"definition": "void *memset(void *dest, int c, size_t count);",
+		"description": "Sets count bytes of dest to a value c.",
+		"done": false
+	},
+	{
+		"name": "strcasecmp",
+		"header": "strings.h",
+		"definition": "int srtcasecmp(const char *string1, const char *string2);",
+		"description": "Compares strings without case sensitivity.",
+		"done": false
+	},
+	{
+		"name": "mktime",
+		"header": "time.h",
+		"definition": "time_t mktime(struct tm *time);",
+		"description": "Converts local time into calendar time.",
+		"done": false
+	},
+	{
+		"name": "mktime64",
+		"header": "time.h",
+		"definition": "time64_t mktime64(struct tm *time);",
+		"description": "Converts local time into calendar time.",
+		"done": false
+	},
+	{
+		"name": "time",
+		"header": "time.h",
+		"definition": "time_t time(time_t *timeptr);",
+		"description": "Returns the current calendar time.",
+		"done": false
+	},
+	{
+		"name": "time64",
+		"header": "time.h",
+		"definition": "time64_t time64(time64_t *timeptr);",
+		"description": "Returns the current calendar time.",
+		"done": false
+	},
+	{
+		"name": "clock",
+		"header": "time.h",
+		"definition": "clock_t clock(void);",
+		"description": "Returns the processor time that has elapsed since the job was started.",
+		"done": false
+	},
+	{
+		"name": "difftime",
+		"header": "time.h",
+		"definition": "double difftime(time_t time2, time_t time1);",
+		"description": "Computes the difference between time2 and time1.",
+		"done": false
+	},
+	{
+		"name": "difftime64",
+		"header": "time.h",
+		"definition": "double difftime64(time64_t time2, time64_t time1);",
+		"description": "Computes the difference between time2 and time1.",
+		"done": false
+	},
+	{
+		"name": "ctime",
+		"header": "time.h",
+		"definition": "char *ctime(const time_t *time);",
+		"description": "Converts time to a character string.",
+		"done": false
+	},
+	{
+		"name": "ctime64",
+		"header": "time.h",
+		"definition": "char *ctime64(const time64_t *time);",
+		"description": "Converts time to a character string.",
+		"done": false
+	}
+]

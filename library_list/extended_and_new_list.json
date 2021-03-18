@@ -1,0 +1,44 @@
+[
+	{
+		"name": "toupper_x",
+		"header": "extended.h",
+		"definition": "void toupper_x(char* s);",
+		"description": "convert all char to upper",
+		"done": true
+	},
+	{
+		"name": "tolower_x",
+		"header": "extended.h",
+		"definition": "void tolower_x(char* s);",
+		"description": "convert all char to lower",
+		"done": true
+	},
+	{
+		"name": "printreg",
+		"header": "extended.h",
+		"definition": "void printreg();",
+		"description": "print all general purpose registers and values",
+		"done": true
+	},
+	{
+		"name": "trim",
+		"header": "extended.h",
+		"definition": "void trim(char* s);",
+		"description": "trim left and right white spaces of string",
+		"done": true
+	},
+	{
+		"name": "trim_left",
+		"header": "extended.h",
+		"definition": "void trim_left(char* s);",
+		"description": "trim left white spaces of string",
+		"done": true
+	},
+	{
+		"name": "trim_right",
+		"header": "extended.h",
+		"definition": "void trim_right(char* s);",
+		"description": "trim right white spaces of string",
+		"done": true
+	}
+]
