@@ -56,13 +56,6 @@
 		"done": false
 	},
 	{
-		"name": "isascii4",
-		"header": "ctype.h",
-		"definition": "int isascii(int c);",
-		"description": "Tests if c is within the 7-bit US-ASCII range.",
-		"done": false
-	},
-	{
 		"name": "isupper",
 		"header": "ctype.h",
 		"definition": "int isupper(int c);",
@@ -70,24 +63,10 @@
 		"done": false
 	},
 	{
-		"name": "iscntrl",
-		"header": "ctype.h",
-		"definition": "int iscntrl(int c);",
-		"description": "Tests if c is a control character.",
-		"done": false
-	},
-	{
 		"name": "assert",
 		"header": "assert.h",
 		"definition": "void assert(int expression);",
 		"description": "Prints a diagnostic message and ends the program if the expression is false.",
-		"done": false
-	},
-	{
-		"name": "isgraph",
-		"header": "ctype.h",
-		"definition": "int isgraph(int c);",
-		"description": "Tests if c is a printable character excluding the space.",
 		"done": false
 	},
 	{

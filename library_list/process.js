@@ -1,6 +1,6 @@
 let fs = require('fs');
 
-let path = './library_list.json';
+let path = './standard_library_list.json';
 
 const get = (conditions) => {
 	let file = JSON.parse(fs.readFileSync(path, 'utf8'));
