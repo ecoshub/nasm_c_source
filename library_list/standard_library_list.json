@@ -4,14 +4,14 @@
 		"header": "ctype.h",
 		"definition": "int isblank(int c);",
 		"description": "Tests if c is a blank or tab character.",
-		"done": false
+		"done": true
 	},
 	{
 		"name": "isdigit",
 		"header": "ctype.h",
 		"definition": "int isdigit(int c);",
 		"description": "Tests if c is a decimal digit.",
-		"done": false
+		"done": true
 	},
 	{
 		"name": "tolower",
@@ -39,28 +39,28 @@
 		"header": "ctype.h",
 		"definition": "int islower(int c);",
 		"description": "Tests if c is a lowercase letter.",
-		"done": false
+		"done": true
 	},
 	{
 		"name": "isprint",
 		"header": "ctype.h",
 		"definition": "int isprint(int c);",
 		"description": "Tests if c is a printable character including the space.",
-		"done": false
+		"done": true
 	},
 	{
 		"name": "isalpha",
 		"header": "ctype.h",
 		"definition": "int isalpha(int c);",
 		"description": "Tests if c is alphabetic.",
-		"done": false
+		"done": true
 	},
 	{
 		"name": "isupper",
 		"header": "ctype.h",
 		"definition": "int isupper(int c);",
 		"description": "Tests if c is an uppercase letter.",
-		"done": false
+		"done": true
 	},
 	{
 		"name": "assert",
@@ -74,14 +74,14 @@
 		"header": "ctype.h",
 		"definition": "int isspace(int c);",
 		"description": "Tests if c is a whitespace character.",
-		"done": false
+		"done": true
 	},
 	{
 		"name": "isalnum",
 		"header": "ctype.h",
 		"definition": "int isalnum(int c);",
 		"description": "Tests if c is alphanumeric.",
-		"done": false
+		"done": true
 	},
 	{
 		"name": "puts",
