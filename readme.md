@@ -1,65 +1,51 @@
-# Welcome
+# Standard C Libraries in NASM
 
-This is a Netwide Assembler work to recreate (_and reinterpret_) some of the **Standard C Libraries**.
-
-This work started for learning assembly language with NASM. I hope it can help me to understand basics of assembly language and inspire others who wants to learn NASM or any other assembly language.
+This project aims to recreate some of the Standard C Libraries using the Netwide Assembler (NASM). It was created as a learning exercise to help me understand the basics of assembly language, and to inspire others who are interested in learning NASM or any other assembly language.
 
 ## Folder Structure
 
-### ./source
 
-Source is containing whole source code of this project. All object files are assembled from here.
+| Folder    | Description                                                                                                                                                 |
+|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| source    | Contains the source code for the project, including subfolders for standard and extended C Library files, as well as new procedures designed by the author. |
+| source/standard    | Contains standard C Library files. |
+| source/extended    | Contains extended C Library files. These procedures have a '_x' suffix and have additional features. |
+| source/new    | Contains new procedures designed by the author. There are some useful procedures in this folder. |
+| examples  | Contains examples of how to use some of the libraries.                                                                                                      |
+| tools     | Contains tools used to build the system. The `lib_path` in `basm.bash` and `makelib.bash` can be modified to change the default location.                     |
+| lib       | Contains all the object files.                                                                                                                               |
+| learning  | Contains notes about NASM syntax and definitions.                                                                                                            |
+| workspace | Contains simple programs such as argument reading and echo, as well as the early stages of the author's learning process.                                      |
 
-Source has 3 sub folder
-
-**standard:** 'standard' contains standard C Library files.
-
-**extended:** 'extended' contains extended C Library files. all extended procedures has '\_x' suffix in them and they are all have some extended features.
-
-**new:** 'new' contains new procedure files designed by me. There are some useful procedures in it.
-
-### ./examples
-
-example usage of some libraries
-
-### ./tools
-
-Basically whole system is created around my working environment but it does not constitute an obstacle.
-
-There is only one thing you need to modify, the **lib_path** in **/tools/basm.bash** and **/tools/makelib.bash** file. it is default by **$HOME/assembly/lib** but you can change to anywhere just these tools needs to know where it is.
-
-There is a separate **readme.md** file in tools check it out.
-
-### ./lib
-
-library folder to contain all object files
-
-### ./learning
-
-some of my notes about NASM syntax and definitions
-
-### ./workspace
-
-There are some other simple programs like argument reading and echo. it is mostly containing early stages of my learning.
 
 ## Usage
 
-To use a .asm file in your c code.
+To use a .asm file in your C code, follow these steps:
+
+1) Compile it with NASM (32-bit compilation is recommended):
 
 ```bash
-    # compile it with nasm (32 bit compile recommended)
     nasm -f elf32 <as_file.asm> -o <out_name.o>
+```
 
-    # then link it to you c code with gcc
+2) Link it to your C code using GCC:
+
+```bash
     gcc -m32 <your_c_file.c> -o <executable_name> <out_name.o>
+```
 
-    # run the executable
+3) Run the executable:
+
+```bash
     ./<executable_name>
 ```
 
-Example:
-I have a strlen.asm file
-and I am gonna use it in my source.c file
+To use the libraries in your own projects, you can either include the appropriate .asm files in your source code and assemble and link them as shown in the example above, or you can use the object files in the ./lib folder.
+
+To use an object file, include the corresponding header file in your C code and link the object file when compiling.
+
+For example, to use the strlen function from the string.h header file, you can do the following:
+
 
 strlen.asm:
 
@@ -101,3 +87,4 @@ source.c:
         printf("string_length: %i\n", string_length);
     }
 ```
+
